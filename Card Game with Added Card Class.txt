@@ -1,0 +1,56 @@
+public class Card {
+    
+    private String suit;
+    private String name;
+    private String picture;
+    private int value;
+
+    // constructor - assigns values 
+    public Card(String suit, String name, int value, String picture) {
+        this.suit = suit;
+        this.name = name;
+        this.value = value;
+        this.picture = picture;
+        
+    }
+
+    // accessors - reads value of private var
+    public String getSuit() {
+        return suit;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getValue() {
+        return value;
+    }
+    
+    public String getPicture() {
+        return picture;
+    }
+
+    // mutators - modifies var values
+    public void setSuit(String suit) {
+        this.suit = suit;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+   
+    public void setValue(int value) {
+        this.value = value;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
+
+    // toString method - represents values as a string
+    public String toString() {
+        return name + " of " + suit + " (Value: " + value + ", Picture: " + picture + ")";
+    }
+
+}
